@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/883d0ff009.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <div class="container">
+            <header id="encabezado">
+                <a href="index.html"><i class="fa-solid fa-burger" id="burger"></i></a>
+                <nav class="navbar">
+                    <input type="checkbox" id="check" />
+                        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                    <ul class="menu">
+                        <li><a href="index-personal.html#home">Inicio</a></li>
+                        <li><a href="index-personal.html#food">Comidas</a></li>
+                        <li><a href="index-personal.html#desserts">Postres</a></li>
+                        <li><a href="index-personal.html#drinks">Tragos</a></li>
+                        <li><a href="index-personal.html#about">Acerca de mí</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main id="seccion-principal">
+            <section class="section-1">
+                <div class="acerca-imagen">
+                    <img src="img/naranja.jpg" class="naranjass" alt="imagen personal"> 
+                </div>
+
+                <div class="acerca-de">
+                    <h2>ACERCA DE MÍ</h2>
+                    <p class="parrafo1">¡Bienvenidx a mi página! Aquí encontrarás variadas recetas para disfrutar y divertirte en el proceso.</p>
+                    <p class="parrafo2">Me llamo Aldana, nací en Salto, Uruguay, donde actualmente vivo. Me gusta comer, viajar y cocinar. </p>
+                </div>
+
+            </section>
+            <section class="section-2">
+                <img src="img/portada.jpg" class="verduras" alt="imagen de carrousel">
+            </section>
+
+<!-- tarjetas -->
+        <section class="cards-container">
+            <section class="card">
+                <div class="espacio-imagen">
+                    <img src="img/tab-avena-cebolla.jpeg" class="avenaycebolla" alt="imagen personal"> 
+                </div>
+                <div class="destacado1">
+                    <h1 class="card-subtitle">Tablitas de avena y cebolla</h1>
+                    <p>Receta de tablitas de avena y cebolla</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="espacio-imagen">
+                    <img src="img/tarta-zapallito.jpeg" class="tartazapallito" alt="imagen personal"> 
+                </div>
+                <div class="destacado2">
+                    <h1 class="card-subtitle">Tarta de zapallito</h1>
+                    <p>Receta de tarta de zapallito</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="espacio-imagen">
+                    <img src="img/budin-avena.jpeg" class="budinavenabanana" alt="imagen personal"> 
+                </div>
+                <div class="destacado3">
+                    <h1 class="card-subtitle">Budín de avena y banana</h1>
+                    <p>Receta de budín de avena y banana</p>
+                </div>
+            </section>
+        </section>
+
+        </main>
+
+        <footer class="form-header">
+            <section class="form-content">
+            <h1>CONTACTO</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+      
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" />
+                </div>
+    
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" placeholder="pepe@gmail.com" 
+                    required/>
+                </div>
+    
+                <div class="form-row">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+    
+                <div class="form-row">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+    
+                <p class="alertas" id="alertas"></p>
+            </form>
+            </section>
+
+            <!-- <h1>Redes sociales</h1>
+            <nav>
+                <ul>
+                    <li><a href="index-personal.html#contact">Instagram</a></li>
+                    <li><a href="index-personal.html#contact">Pinterest</a></li>
+                </ul>
+            </nav> -->
+        </footer>  
+
+    </body>
+</html>

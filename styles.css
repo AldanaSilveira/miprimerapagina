@@ -1,0 +1,348 @@
+ol,
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #cff800;
+}
+
+.acerca-de h2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+p {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*Darle color y organizar todo el menú general*/
+header {
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    background-color: #ff60ab;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    }
+
+
+/*Sirve para separar las categorías del menú*/
+header nav ul{
+    display: flex;
+    gap: 5vh;
+    position: relative;
+    left: -50px;
+}
+
+/*Sirve para darle color a las categorías del menú, dentro de las listas, los elementos a*/
+header nav ul li a{
+    color: white;
+    font-size: 1.2em;
+}
+
+#burger{
+    color: white;
+    font-size: 7vh;
+    padding: 8px;
+}
+
+
+.section-1{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    padding: 2%;
+    margin: 11vh 10px 10px 10px;
+}
+
+.acerca-imagen{
+    width: 15%;
+}
+.naranjass{
+    width: 100%;
+}
+
+.acerca-de{
+    position: relative;
+    left: 2%;
+    max-width: 70%;
+}
+
+.parrafo1{
+    width: 100%;
+}
+
+h2 {
+    color: #ff60ab;
+    font-family: "Arial black";
+}
+
+
+
+.verduras{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    justify-content: space-around;
+}
+
+.card-subtitle{
+    font-family: "Arial black";
+}
+.card{
+    margin:0;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    padding: 15px ;
+}
+
+.espacio-imagen{
+    width:100%;
+}
+
+.avenaycebolla{
+    max-width: 100%;
+}
+
+.tartazapallito{
+    max-width:100%;
+}
+
+.budinavenabanana{
+    max-width:100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff60ab;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    
+}
+
+.form-content{
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 2%;
+}
+
+footer h1{
+    color: #ff60ab;
+    font-family: "Quicksand", sans-serif ;
+}
+
+footer p{
+    font-family: "Quicksand", sans-serif;
+}
+
+.formulario {
+    background-color: white;
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.form-row input[type="text"],.form-row input[type="email"] {
+    background-color: #dbfa3e;
+    border: 0;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+    font-family: "Quicksand", sans-serif ;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    background-color:#dbfa3e;
+    border: 0;
+    border-radius: 3px;
+  
+    min-height: 100px;
+    margin-bottom: 10px;
+    resize: none;
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff60ab;
+    border: 3px solid #cff800;
+    border-radius: 3px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+
+  .form-row button:hover {
+    background-color: #f592c0;
+  }
+
+  .form-row button:active {
+    background-color: #cff800;
+  }
+
+/* footer nav ul li a{
+    color: white;
+    font-size: 1.2em;
+} */
+
+/*MENU*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 5vh;
+    color: white;
+    float: right;
+    line-height: min-content;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    padding: 5px;
+}
+
+
+
+/*PARA MOBILE*/
+@media (max-width: 768px){
+    .card{
+        width: 80%;
+        margin: 1% 0 1% 0;
+    }
+
+    .section-1{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .acerca-imagen{
+        width: 40%;
+    }
+
+    .acerca-de{
+        position: relative;
+        left: 2%;
+        max-width: 90%;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #cff800;
+        text-align: center;
+
+        top: 7%;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 30px;
+        color:white;
+        position: relative;
+        right: 5%;
+    }
+
+    #check:checked ~ .checkbtn{
+        color:#cff800;
+    }
+
+    #encabezado .navbar ul li a:hover {
+        color: #ff60ab;
+    }
+    
+    /* ACTIVE */
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+
+}
+
+@media (min-width: 700px){
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+      .form-row input[type="text"], .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 100px;
+        margin-top: 0;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+        width: 250px;
+      }
+      .form-row button {
+        margin-left: 120px;
+      }
+}
